@@ -39,7 +39,15 @@ const Footer = () => {
               <Link to="/REACHCADBooks" className="block text-gray-300 hover:text-primary transition">REACH CAD Books</Link>
               <Link to="/CaseStudy" className="block text-gray-300 hover:text-primary transition">Case Study</Link>
               
-              <Link to="/AboutREACHTechnologies" className="block text-gray-300 hover:text-primary transition">About REACH Technologies</Link>
+              <a
+                href="https://share.google/l0Hi3EEV3ElvGZo8R"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-300 hover:text-primary transition"
+              >
+                About REACH Technologies
+                </a>
+
             </nav>
           </div>
          <div>

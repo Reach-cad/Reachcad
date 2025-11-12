@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Index from "@/pages/Home/Index";
 import AboutPage from "@/pages/About/About";
+import AboutREACHTechnologies from "@/pages/AboutREACHTechnologies/AboutREACHTechnologies";
 import Benefits from "@/pages/Benefits/Benefits";
 import Presentations from "@/pages/Presentations/Presentations";
 import CaseStudies from "@/pages/CaseStudies/CaseStudies";
@@ -36,6 +37,7 @@ const AppRoutes = () => {
       <Route path="/benefits/detail/:id" element={<BenefitDetailRouter />} />
       <Route path="/REACHCADBooks" element={<REACHCADBooks />} /> 
       <Route path="/CaseStudy" element={<CaseStudy />} /> 
+      <Route path="/AboutREACHTechnologies" element={<AboutREACHTechnologies />} />
       <Route path="/SalesPartners" element={<SalesPartners />} />
       <Route path="/TrainingPartners" element={<TrainingPartners />} />
       <Route path="/GovernmentAgencies" element={<GovernmentAgencies />} />
