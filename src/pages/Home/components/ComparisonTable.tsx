@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import comparisonTableImage from "@/assets/comparison-table.jpg";
 
 const ComparisonTable = () => {
   const features = [
@@ -39,45 +40,30 @@ const ComparisonTable = () => {
     },
   ];
 
+  // 👉 Define renderCell here
+  const renderCell = (value) => {
+    if (typeof value === "boolean") {
+      return value ? "✔" : "✘";
+    }
+
+    return <span className="text-maroon">{value}</span>;
+  };
+
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#9C1F45]">
-          What makes <span className="font-extrabold">REACH CAD</span> the best apparel CAD software?
-        </h2>
+  <div className="container mx-auto px-4 text-center">
+    {/*<h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#9C1F45]">
+      What makes <span className="font-extrabold">REACH CAD</span> the best apparel CAD software?
+    </h2>*/}
 
-        <div className="overflow-x-auto mt-12">
-          <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden text-black">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="px-6 py-4 text-left font-semibold">FEATURE</th>
-                <th className="px-6 py-4 text-center font-semibold">MANUAL METHODS</th>
-                <th className="px-6 py-4 text-center font-semibold">AUTO CAD</th>
-                <th className="px-6 py-4 text-center font-semibold">Gerber CAD (Accumark)</th>
-                <th className="px-6 py-4 text-center font-semibold">REACH CAD</th>
-              </tr>
-            </thead>
-            <tbody>
-              {features.map((row, index) => (
-                <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="px-6 py-4 font-medium">{row.feature}</td>
+    <img
+      src={comparisonTableImage}
+      alt="Comparison Table"
+      className="mx-auto w-full max-w-7xl rounded-lg shadow-lg"
+    />
+  </div>
+</section>
 
-                  {[row.manual, row.autocad, row.gerber, row.reach].map((col, i) => (
-                    <td key={i} className="px-6 py-4 text-center">
-                      {typeof col === "boolean" ? (
-                        col ? <Check className="w-5 h-5 text-[#9C1F45] mx-auto" /> : <X className="w-5 h-5 text-[#9C1F45] mx-auto" />
-                      ) : (
-                        <span className="font-medium">{col}</span>
-                      )}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
   );
 };
 

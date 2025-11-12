@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/ChatGPT Image Jul 19, 2025, 02_29_13 PM.png";
+import heroImage from "@/assets/hero-new.png.jpg";
+
 
 const HeroSection = () => {
   const [viewport, setViewport] = useState<"mobile" | "tablet" | "laptop">("laptop");
@@ -79,17 +80,17 @@ const HeroSection = () => {
       style={{ minHeight: viewport === "mobile" ? "350px" : "700px" }}
     >
       <div className="absolute inset-0" style={sectionStyle}>
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/*<div className="absolute inset-0 bg-black/40"></div>*/}
       </div>
 
       <div style={buttonContainerStyle}>
-        <Button
+       {/* <Button
           variant="default"
           className="text-white font-semibold bg-rose-700 hover:bg-rose-800"
           style={buttonStyle}
         >
           Request a Demo
-        </Button>
+        </Button>*/}
       </div>
     </section>
   );

@@ -84,13 +84,13 @@ const Link1 = () => {
 
         {/* Intro Section */}
         <section className="text-center py-12 px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-red-700 mb-4">
+          {/*<h2 className="text-2xl md:text-3xl font-semibold text-red-700 mb-4">
             Read About REACH CAD Benefit Below
-          </h2>
+          </h2>*/}
           <hr className="border-t border-gray-300 w-16 mx-auto mb-8" />
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-5xl mx-auto">
-            <div className="max-w-lg w-full shadow-lg h-69">
+          {/*}   <div className="max-w-lg w-full shadow-lg h-69">
               <Slider {...carouselSettings}>
                 {carouselImages.map((img, index) => (
                   <img
@@ -101,62 +101,69 @@ const Link1 = () => {
                   />
                 ))}
               </Slider>
-            </div>
+            </div>*/}
 
-            <div className="text-left space-y-4 max-w-xl">
-              <p>Make dimensionally accurate pattern that fits.</p>
-              <p>Use REACH CAD to create patterns that fit.</p>
-              <p>
-                Forget about the wear and tear of the measuring instruments,
-                differences in measurements between various instruments or
-                differences in pencils.
-              </p>
-              <p>With REACH CAD, you always get great accurate patterns!</p>
-              <Link
-                to="/brochure"
-                className="inline-block bg-red-700 text-white px-5 py-2 rounded shadow hover:bg-red-800 transition"
-              >
-                Brochure
-              </Link>
-            </div>
+           
+<div className="bg-gray-50 p-8 rounded-xl shadow-md max-w-3xl mx-auto">
+  <div className="text-left space-y-6 text-2xl font-medium leading-relaxed text-gray-800">
+    <p>Make dimensionally accurate pattern that fits.</p>
+    <p>Use REACH CAD to create patterns that fit.</p>
+    <p>
+      Forget about the wear and tear of the measuring instruments,
+      differences in measurements between various instruments or differences in pencils.
+    </p>
+    <p>With REACH CAD, you always get great accurate patterns!</p>
+    {/*<Link
+      to="/brochure"
+      className="inline-block bg-red-700 text-white px-5 py-2 rounded shadow hover:bg-red-800 transition"
+    >
+      Brochure
+    </Link>*/}
+  </div>
+</div>
+
+
           </div>
         </section>
 
         {/* Benefits List Section */}
-        <section className="py-16 px-4 bg-white">
-          <h3 className="text-center text-xl md:text-2xl text-red-700 font-semibold mb-6">
-            Click the Links Below to Read About More Benefits of REACH CAD
-          </h3>
-          <hr className="border-t border-gray-300 w-16 mx-auto mb-10" />
+     {/*
+<section className="py-16 px-4 bg-white">
+  <h3 className="text-center text-xl md:text-2xl text-red-700 font-semibold mb-6">
+    Click the Links Below to Read About More Benefits of REACH CAD
+  </h3>
+  <hr className="border-t border-gray-300 w-16 mx-auto mb-10" />
 
-          <div className="flex flex-col-reverse md:flex-row gap-8 max-w-7xl mx-auto">
-            {/* Left: Bullet list */}
-            <ul className="space-y-4 text-base md:text-lg list-disc list-outside pl-6 flex-1">
-              {benefitPoints.map((point, index) => (
-                <li key={index} className="text-gray-700">
-                  {point}{" "}
-                  <Link
-                    to={`/benefits/detail/${index + 1}`}
-                    className="text-primary hover:underline font-medium ml-1"
-                  >Read more</Link>
-                </li>
-              ))}
-            </ul>
+  <div className="flex flex-col-reverse md:flex-row gap-8 max-w-7xl mx-auto">
+    <ul className="space-y-4 text-base md:text-lg list-disc list-outside pl-6 flex-1">
+      {benefitPoints.map((point, index) => (
+        <li key={index} className="text-gray-700">
+          {point}{" "}
+          <Link
+            to={`/benefits/detail/${index + 1}`}
+            className="text-primary hover:underline font-medium ml-1"
+          >
+            Read more
+          </Link>
+        </li>
+      ))}
+    </ul>
 
-            {/* Right: Image */}
-            <div className="flex-1">
-              <img
-                src={benefitImage}
-                alt="Benefits Clothing Display"
-                className="rounded shadow-lg w-full object-cover"
-              />
-            </div>
-          </div>
-        </section>
+    <div className="flex-1">
+      <img
+        src={benefitImage}
+        alt="Benefits Clothing Display"
+        className="rounded shadow-lg w-full object-cover"
+      />
+    </div>
+  </div>
+</section>
+*/}
+
       </div>
-      <ReachWebinar />
+     {/* <ReachWebinar />
       <Testimonials />
-      <ShareSection />
+      <ShareSection />*/}
       <QuoteSection />
       <Footer />
     </>

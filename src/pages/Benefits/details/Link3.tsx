@@ -8,7 +8,6 @@ import ShareSection from "../components/ShareSection";
 import QuoteSection from "../components/QuoteSections";
 import Footer from "@/components/Footer";
 
-// 10 slide image there
 import slide1 from "@/assets/image1.png";
 import slide2 from "@/assets/image2.png";
 import slide3 from "@/assets/image3.png";
@@ -30,7 +29,7 @@ const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     onClick={onClick}
     className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 text-black p-2 rounded-full cursor-pointer shadow hover:bg-gray-50"
   >
-  &#9658;
+    &#9658;
   </div>
 );
 
@@ -56,7 +55,6 @@ const carouselSettings = {
   prevArrow: <PrevArrow />,
 };
 
-
 const Link3 = () => {
   return (
     <>
@@ -67,29 +65,32 @@ const Link3 = () => {
         <section className="bg-yellow-400 px-4 py-10 text-black">
           <div className="max-w-4xl mx-auto pl-6 border-l-2 border-gray-800 text-xl leading-relaxed space-y-1">
             <div className="py-2">
-            <p>Clothing CAD software for discerning customers.</p>
-            <p>Clothing CAD that saves time and fabric.</p>
-            <p>Clothing pattern CAD software that enables consistent quality. Every time.</p>
-            <p>Clothing pattern CAD software that enables your team to collaborate seamlessly to deliver on time.</p>
+              <p>Clothing CAD software for discerning customers.</p>
+              <p>Clothing CAD that saves time and fabric.</p>
+              <p>Clothing pattern CAD software that enables consistent quality. Every time.</p>
+              <p>Clothing pattern CAD software that enables your team to collaborate seamlessly to deliver on time.</p>
             </div>
             <p className="py-4">Welcome to REACH CAD!</p>
             <p className="py-4">Best In Class Software.</p>
             <div className="py-2">
-            <p>Create Apparel Patterns that Fit. Accurately. Always. Fast.</p>
-            <p>Save Time. Save Fabric.</p>
-            <p>Collaborate with Team Members.</p>
+              <p>Create Apparel Patterns that Fit. Accurately. Always. Fast.</p>
+              <p>Save Time. Save Fabric.</p>
+              <p>Collaborate with Team Members.</p>
             </div>
           </div>
         </section>
 
         {/* Intro Section */}
         <section className="text-center py-12 px-4">
+          {/* 
           <h2 className="text-2xl md:text-3xl font-semibold text-red-700 mb-4">
             Read About REACH CAD Benefit Below
-          </h2>
+          </h2> 
+          */}
           <hr className="border-t border-gray-300 w-16 mx-auto mb-8" />
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-5xl mx-auto">
+            {/* 
             <div className="max-w-lg w-full shadow-lg h-69">
               <Slider {...carouselSettings}>
                 {carouselImages.map((img, index) => (
@@ -101,28 +102,33 @@ const Link3 = () => {
                   />
                 ))}
               </Slider>
-            </div>
+            </div> 
+            */}
 
-            <div className="text-left space-y-4 max-w-xl">
+             <div className="bg-gray-50 p-8 rounded-xl shadow-md max-w-3xl mx-auto">
+            
+            <div className="text-left space-y-6 text-2xl font-medium leading-relaxed text-gray-800">
               <p>Add precise seam and other allowances to patterns easily.</p>
-              <p>Precise seam and other allowances to patterns are critical in garment construction.
-</p>
+              <p>Precise seam and other allowances to patterns are critical in garment construction.</p>
               <p>
-                Manually this takes a lot of time and is prone to errors.
-A error in this can impact the overall construction of the garment.
+                Manually this takes a lot of time and is prone to errors. A error in this can impact the overall construction of the garment.
               </p>
               <p>With REACH CAD, you automate this process ensuring speed and accuracy.</p>
+              {/* 
               <Link
                 to="/brochure"
                 className="inline-block bg-red-700 text-white px-5 py-2 rounded shadow hover:bg-red-800 transition"
               >
                 Brochure
-              </Link>
+              </Link> 
+              */}
+              </div>
             </div>
           </div>
         </section>
 
         {/* Benefits List Section */}
+        {/*
         <section className="py-16 px-4 bg-white">
           <h3 className="text-center text-xl md:text-2xl text-red-700 font-semibold mb-6">
             Click the Links Below to Read About More Benefits of REACH CAD
@@ -130,7 +136,6 @@ A error in this can impact the overall construction of the garment.
           <hr className="border-t border-gray-300 w-16 mx-auto mb-10" />
 
           <div className="flex flex-col-reverse md:flex-row gap-8 max-w-7xl mx-auto">
-            {/* Left: Bullet list */}
             <ul className="space-y-4 text-base md:text-lg list-disc list-outside pl-6 flex-1">
               {benefitPoints.map((point, index) => (
                 <li key={index} className="text-gray-700">
@@ -138,12 +143,13 @@ A error in this can impact the overall construction of the garment.
                   <Link
                     to={`/benefits/detail/${index + 1}`}
                     className="text-primary hover:underline font-medium ml-1"
-                  >Read more</Link>
+                  >
+                    Read more
+                  </Link>
                 </li>
               ))}
             </ul>
 
-            {/* Right: Image */}
             <div className="flex-1">
               <img
                 src={benefitImage}
@@ -153,10 +159,14 @@ A error in this can impact the overall construction of the garment.
             </div>
           </div>
         </section>
+        */}
       </div>
-      <ReachWebinar />
-      <Testimonials />
-      <ShareSection />
+
+      {/* Additional Sections */}
+      {/* <ReachWebinar /> */}
+      {/* <Testimonials /> */}
+      {/* <ShareSection /> */}
+
       <QuoteSection />
       <Footer />
     </>
