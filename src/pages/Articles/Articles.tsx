@@ -7,6 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = "/pdfjs/pdf.worker.min.js";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
@@ -32,7 +33,10 @@ const articles = [
 const Articles: React.FC = () => {
   return (
     <>
-      <Header />
+      <Header /> 
+
+          <HeroSection /> 
+
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-center mb-10">Articles</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSection from '@/components/HeroSection';
 
 const GovernmentAgencies: React.FC = () => {
   return (
     <>
       <Header />
+      <HeroSection />
       <div className="flex flex-col min-h-screen">
         <div className="flex-grow px-6 py-10 max-w-5xl mx-auto text-justify text-lg">
           <h1 className="text-3xl font-bold mb-6 text-center">Government Agencies</h1>

@@ -10,7 +10,7 @@ const Footer = () => {
               <span className="text-primary">REACH</span> CAD
             </Link>
             <p className="text-gray-300 max-w-md">
-              REACH CAD enables Digital Apparel Pattern Design, Grading, and Automated Marker Planning
+              The Best Apparel CAD software for Digital Apparel Pattern Design, Grading, and Automated Marker Planning
             </p>
           </div>
 

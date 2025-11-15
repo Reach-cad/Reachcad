@@ -1,3 +1,7 @@
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import HeroSection from "../../components/HeroSection";
+
 const guides = [
   {
     title: "Learning Guide: Internal Details and Advanced Viewing in REACH CAD",
@@ -18,43 +22,59 @@ const guides = [
 
 const LearningGuides = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-10">Learning Guides</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {guides.map((guide, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
-          >
-            <img
-              src={guide.cover}
-              alt={`Cover for ${guide.title}`}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4 flex flex-col justify-between flex-1">
-              <h2 className="text-lg font-semibold mb-4">{guide.title}</h2>
-              <div className="mt-auto space-x-4">
-                <a
-                  href={guide.pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                >
-                  Open
-                </a>
-                <a
-                  href={guide.pdf}
-                  download
-                  className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-                >
-                  Download
-                </a>
+    <>
+      {/* HEADER */}
+      <Header />
+
+      {/* BIG HERO IMAGE (ADDED) */}
+      <HeroSection />
+
+      {/* PAGE CONTENT */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <h1 className="text-3xl font-bold text-center mb-10">Learning Guides</h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {guides.map((guide, index) => (
+        <div
+              key={index}
+              className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
+            >
+              <img
+                src={guide.cover}
+                alt={`Cover for ${guide.title}`}
+                className="w-full max-h-96 object-contain bg-white"
+              />
+
+              <div className="p-4 flex flex-col justify-between flex-1">
+                <h2 className="text-lg font-semibold mb-4">{guide.title}</h2>
+
+                <div className="mt-auto space-x-4">
+                  <a
+                    href={guide.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                  >
+                    Open
+                  </a>
+
+                  <a
+                    href={guide.pdf}
+                    download
+                    className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                  >
+                    Download
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* FOOTER */}
+      <Footer />
+    </>
   );
 };
 

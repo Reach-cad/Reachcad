@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "@/components/Footer"; 
-import Header from "@/components/Header";// Adjust path if needed
+import Header from "@/components/Header";
+import HeroSection from '@/components/HeroSection';
 
 const SalesPartners: React.FC = () => {
  return (
   <>
     <Header />
+    <HeroSection />
     <div className="flex flex-col min-h-screen">
       {/* Page Content */}
       <div className="flex-grow px-6 py-10 max-w-5xl mx-auto text-justify text-lg">
@@ -20,12 +22,12 @@ const SalesPartners: React.FC = () => {
           If your profile matches any of the following, please do write to us at <a href="mailto:info@reach-tech.com" className="text-blue-600 underline">info@reach-tech.com</a> to explore collaboration:
         </p>
         <ul className="list-disc pl-6 mb-6">
-          <li>a) A firm currently marketing and selling software</li>
-          <li>b) A firm currently selling something (e.g., apparel machinery, fabric, accessories) to the apparel/fashion sectors</li>
-          <li>c) A professional with experience in marketing and selling software</li>
-          <li>d) A professional with experience in marketing and selling something to the apparel/fashion sectors</li>
-          <li>e) A startup with interest in marketing and selling software</li>
-          <li>f) An individual with interest in marketing and selling software</li>
+          <li>A firm currently marketing and selling software</li>
+          <li>A firm currently selling something (e.g., apparel machinery, fabric, accessories) to the apparel/fashion sectors</li>
+          <li>A professional with experience in marketing and selling software</li>
+          <li>A professional with experience in marketing and selling something to the apparel/fashion sectors</li>
+          <li>A startup with interest in marketing and selling software</li>
+          <li>An individual with interest in marketing and selling software</li>
         </ul>
         <p className="mb-4">
           REACH offers great products, training, and support to help you start and grow your business.

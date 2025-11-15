@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSection from '@/components/HeroSection';
 
 const englishImageFiles = [
   "english1.png",
@@ -40,6 +41,7 @@ const EnglishImages: React.FC = () => {
   return (
     <>
       <Header />
+      <HeroSection />
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-center mb-8">REACH CAD - English Images</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

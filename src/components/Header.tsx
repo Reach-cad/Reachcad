@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
 
           <div className="text-sm sm:text-base text-gray-700 md:block w-full md:w-1/2 lg:w-1/3 text-left md:text-right">
-            REACH CAD enables Digital Apparel Pattern Design, Grading, and Automated Marker Planning
+            REACH CAD: The Best Apparel CAD software for Digital Apparel Pattern Design, Grading, and Automated Marker Planning
           </div>
         </div>
       </div>

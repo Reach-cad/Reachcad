@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSection from '@/components/HeroSection';
+
 
 const SupportPartners: React.FC = () => {
   return (
     <>
       <Header />
+      <HeroSection />
       <div className="flex flex-col min-h-screen">
         <div className="flex-grow px-6 py-10 max-w-5xl mx-auto text-justify text-lg">
           <h1 className="text-3xl font-bold mb-6 text-center">Support Partners</h1>
@@ -27,10 +30,10 @@ const SupportPartners: React.FC = () => {
           </p>
 
           <ul className="list-disc list-inside mb-4 pl-4">
-            <li>a firm currently offering technical support for software products</li>
-            <li>a professional with experience in technical support for software products</li>
-            <li>a startup with interest in technical support for software products</li>
-            <li>an individual with interest in technical support for software products</li>
+            <li>A firm currently offering technical support for software products</li>
+            <li>A professional with experience in technical support for software products</li>
+            <li>A startup with interest in technical support for software products</li>
+            <li>An individual with interest in technical support for software products</li>
           </ul>
 
           <p className="mb-4">
