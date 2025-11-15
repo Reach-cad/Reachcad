@@ -5,7 +5,6 @@ import { benefitPoints } from "../components/BenefitLinks";
 import ReachWebinar from "../components/ReachWebinar";
 import Testimonials from "../components/Testimonals";
 import ShareSection from "../components/ShareSection";
-import QuoteSection from "../components/QuoteSections";
 import Footer from "@/components/Footer";
 
 // 10 slide image there
@@ -182,7 +181,6 @@ const Link5 = () => {
       {/* <Testimonials /> */}
       {/* <ShareSection /> */}
 
-      <QuoteSection />
       <Footer />
     </>
   );

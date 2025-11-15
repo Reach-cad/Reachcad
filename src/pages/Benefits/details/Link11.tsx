@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { benefitPoints } from "../components/BenefitLinks";
-import QuoteSection from "../components/QuoteSections";
 import Footer from "@/components/Footer";
 
 const Link11 = () => {
@@ -48,7 +47,6 @@ const Link11 = () => {
         {/* <ReachWebinar /> */}
         {/* <Testimonials /> */}
         {/* <ShareSection /> */}
-        <QuoteSection />
         <Footer />
       </div>
     </>

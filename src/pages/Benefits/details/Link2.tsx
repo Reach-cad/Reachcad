@@ -5,7 +5,6 @@ import { benefitPoints } from "../components/BenefitLinks";
 import ReachWebinar from "../components/ReachWebinar";
 import Testimonials from "../components/Testimonals";
 import ShareSection from "../components/ShareSection";
-import QuoteSection from "../components/QuoteSections";
 import Footer from "@/components/Footer";
 
 import slide1 from "@/assets/image1.png";
@@ -168,7 +167,6 @@ const Link2 = () => {
       {/* <Testimonials /> */}
       {/* <ShareSection /> */}
 
-      <QuoteSection />
       <Footer />
     </>
   );
