@@ -49,7 +49,7 @@ const EnglishImages: React.FC = () => {
             <div key={index} className="shadow-lg rounded overflow-hidden">
               <img
                 src={`/REACHCADImages/english/${fileName}`}
-                alt={`English Image ${index + 1}`}
+                alt={`REACH CAD English gallery image ${index + 1}`}
                 className="w-full h-40 object-contain"
               />
             </div>

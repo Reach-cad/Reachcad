@@ -23,11 +23,12 @@ const Casestudies: React.FC = () => {
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
             >
-              <img
-                src={book.cover}
-                alt={`Cover of ${book.title}`}
-                className="w-full h-64 object-cover"
-              />
+ <img
+  src={book.cover}
+  alt={`${book.title} – REACH CAD case study cover`}
+  className="w-full h-64 object-cover"
+/>
+
               <div className="p-4 flex flex-col justify-between flex-1">
                 <h2 className="text-lg font-semibold mb-4">{book.title}</h2>
                 <div className="mt-auto space-x-4">

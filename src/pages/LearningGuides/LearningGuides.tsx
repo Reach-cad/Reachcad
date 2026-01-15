@@ -39,11 +39,12 @@ const LearningGuides = () => {
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
             >
-              <img
-                src={guide.cover}
-                alt={`Cover for ${guide.title}`}
-                className="w-full max-h-96 object-contain bg-white"
-              />
+<img
+  src={guide.cover}
+  alt={`${guide.title} – REACH CAD learning guide cover`}
+  className="w-full max-h-96 object-contain bg-white"
+/>
+
 
               <div className="p-4 flex flex-col justify-between flex-1">
                 <h2 className="text-lg font-semibold mb-4">{guide.title}</h2>

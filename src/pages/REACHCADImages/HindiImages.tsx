@@ -48,7 +48,7 @@ const HindiImages: React.FC = () => {
             <div key={index} className="shadow-lg rounded overflow-hidden">
               <img
                 src={`/REACHCADImages/hindi/${fileName}`}
-                alt={`Hindi Image ${index + 1}`}
+                alt={`REACH CAD Hindi gallery image ${index + 1}`}
                 className="w-full h-40 object-contain"
 
               />

@@ -3,6 +3,11 @@ import heroImage from "@/assets/hero-new.png.jpg";
 const HeroSection = () => {
   return (
     <section className="w-full bg-white">
+      {/* 🔒 Hidden SEO H1 – Not visible on UI */}
+      <h1 className="sr-only">
+        REACH CAD – Apparel CAD Software for Pattern Design, Grading & Marker Planning
+      </h1>
+
       {/* Hero Wrapper */}
       <div
         className="

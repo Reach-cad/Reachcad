@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TaglineSection from "@/pages/Home/components/TaglineSection";
 import ComparisonTable from "@/pages/Home/components/ComparisonTable";
 import WhatDoesSection from "@/pages/Home/components/WhatDoesSection";
+import WhoIsThisFor from "@/pages/Home/components/WhoIsThisFor";
 import BenefitsSection from "@/pages/Home/components/BenefitsSection";
 import CTASection from "@/pages/Home/components/CTASection";
 import Footer from "@/components/Footer";
@@ -15,6 +16,7 @@ const Index = () => {
       <TaglineSection />
       <ComparisonTable />
       <WhatDoesSection />
+      <WhoIsThisFor />
       <BenefitsSection />
       <CTASection />
       <Footer />
