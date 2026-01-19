@@ -61,8 +61,14 @@ const ProductVids: React.FC = () => {
       <Header />
       <HeroSection />
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-center mb-8">REACH CAD Videos</h1>
+<div className="bg-gray-200 m-4 py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-3f4f17">
+    REACH CAD Videos
+  </h1>
+</div>
+
+<div className="max-w-7xl mx-auto px-4 py-12">
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {videos.map((video, index) => (
             <div key={index} className="text-center">

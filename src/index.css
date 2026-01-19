@@ -112,3 +112,58 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* ============================= */
+/* REACH CAD COLOR PALETTE */
+/* ============================= */
+
+/* Background colors */
+.bg-3f4f17 { background-color: #3F4F17; }
+.bg-adc168 { background-color: #ADC168; }
+.bg-e6f6a5 { background-color: #E6F6A5; }
+.bg-c36992 { background-color: #C36992; }
+.bg-a03359 { background-color: #A03359; }
+
+/* Text colors */
+.text-3f4f17 { color: #3F4F17; }
+.text-adc168 { color: #ADC168; }
+.text-e6f6a5 { color: #E6F6A5; }
+.text-c36992 { color: #C36992; }
+.text-a03359 { color: #A03359; }
+
+/* Icon filters for PNG icons */
+
+/* #3F4F17 */
+.icon-3f4f17 {
+  filter: brightness(0) saturate(100%)
+    invert(23%) sepia(24%) saturate(1380%)
+    hue-rotate(52deg) brightness(95%) contrast(90%);
+}
+
+/* #ADC168 */
+.icon-adc168 {
+  filter: brightness(0) saturate(100%)
+    invert(82%) sepia(23%) saturate(531%)
+    hue-rotate(32deg) brightness(95%) contrast(90%);
+}
+
+/* #E6F6A5 */
+.icon-e6f6a5 {
+  filter: brightness(0) saturate(100%)
+    invert(90%) sepia(23%) saturate(468%)
+    hue-rotate(20deg) brightness(102%) contrast(95%);
+}
+
+/* #C36992 */
+.icon-c36992 {
+  filter: brightness(0) saturate(100%)
+    invert(49%) sepia(26%) saturate(1365%)
+    hue-rotate(310deg) brightness(95%) contrast(90%);
+}
+
+/* #A03359 */
+.icon-a03359 {
+  filter: brightness(0) saturate(100%)
+    invert(24%) sepia(86%) saturate(2894%)
+    hue-rotate(323deg) brightness(92%) contrast(92%);
+}

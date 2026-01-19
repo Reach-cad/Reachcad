@@ -75,11 +75,11 @@ import { Check, X } from "lucide-react";
 
 const ComparisonTable = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-e6f6a5">
       <div className="container mx-auto px-4 text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#9C1F45]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-3f4f17">
           What makes <span className="font-bold">REACH CAD</span> the best apparel CAD software?
         </h2>
 
@@ -89,11 +89,11 @@ const ComparisonTable = () => {
             
             <thead>
               <tr className="bg-gray-100 text-[#9C1F45] text-lg">
-                <th className="py-4 px-2 text-left">FEATURE</th>
-                <th className="py-4 px-2">MANUAL METHODS</th>
-                <th className="py-4 px-2">AUTO CAD</th>
-                <th className="py-4 px-2">Gerber CAD (Accumark)</th>
-                <th className="py-4 px-2">REACH CAD</th>
+                <th className="py-4 px-2 text-left text-adc168">FEATURE</th>
+                <th className="py-4 px-2 text-adc168">MANUAL METHODS</th>
+                <th className="py-4 px-2 text-adc168">AUTO CAD</th>
+                <th className="py-4 px-2 text-adc168">Gerber CAD (Accumark)</th>
+                <th className="py-4 px-2 text-adc168">REACH CAD</th>
               </tr>
             </thead>
 

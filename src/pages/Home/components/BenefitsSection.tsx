@@ -1,24 +1,27 @@
-import { Clock, Users, TrendingUp, Star } from "lucide-react";
+import speedIcon from "@/assets/speed.png";
+import enhanceIcon from "@/assets/enhance.png";
+import boostIcon from "@/assets/boost.png";
+import stayIcon from "@/assets/stay.png";
 
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: Clock,
+      icon: speedIcon,
       title: "Speed Up Product Development",
       description: "Shorten design cycles with AI-powered tools that automate repetitive tasks and streamline workflows."
     },
     {
-      icon: Users,
+      icon: enhanceIcon,
       title: "Enhance Collaboration",
       description: "Work seamlessly across departments to ensure cohesive results and reduce miscommunication in the design process."
     },
     {
-      icon: TrendingUp,
+      icon: boostIcon,
       title: "Boost Productivity",
       description: "Create detailed technical flats, fabric designs, and color palettes effortlessly with specialized tools."
     },
     {
-      icon: Star,
+      icon: stayIcon,
       title: "Stay Ahead of Trends",
       description: "Adapt quickly to changing consumer preferences with advanced customization options and design flexibility."
     }
@@ -27,7 +30,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 bg-white text-primary">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-3f4f17">
           Benefits of REACH CAD
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -38,11 +41,15 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
-                  <benefit.icon className="w-8 h-8 text-primary" />
-                </div>
+                <div className="bg-e6f6a5 p-3 rounded-lg flex-shrink-0">
+                  <img
+                    src={benefit.icon}
+                    alt={benefit.title}
+                    className="w-8 h-8 "
+                  />
+                  </div>
                 <div>
-                  <h3 className="text-xl font-bold text-primary mb-3">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-adc168 mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
                 </div>
               </div>

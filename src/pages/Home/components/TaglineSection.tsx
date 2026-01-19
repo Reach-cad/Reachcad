@@ -3,7 +3,7 @@ const TaglineSection = () => {
     <section className="py-16 bg-white text-primary">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-2xl md:text-2xl font-bold">
+          <h2 className="text-2xl md:text-2xl font-bold icon-3f4f17">
             REACH CAD: The Best Apparel CAD software for Digital Apparel Pattern Design, Grading, and Automated Marker Planning
           </h2>
         </div>

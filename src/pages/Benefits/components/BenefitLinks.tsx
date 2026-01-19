@@ -26,7 +26,7 @@ const BenefitLinks = () => {
     <section className="bg-white text-gray-800 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          Benefits of using <span className="text-primary">REACH CAD</span>
+          Benefits of using <span className="text-adc168">REACH CAD</span>
         </h2>
 
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
