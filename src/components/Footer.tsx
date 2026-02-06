@@ -125,7 +125,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; REACH Technologies 2025. All rights reserved.</p>
+          <p>&copy; REACH Technologies. All rights reserved.</p>
         </div>
       </div>
     </footer>
